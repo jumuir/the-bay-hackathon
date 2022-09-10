@@ -1,0 +1,12 @@
+@use './colours' as *;
+
+input:focus {
+    outline: none;
+}
+.underline {
+    text-decoration: underline;
+}
+.red {
+    color: $Bay-Red;
+    font-weight: 700;
+}

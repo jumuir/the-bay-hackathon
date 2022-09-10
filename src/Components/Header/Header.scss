@@ -1,0 +1,115 @@
+@use '../../Styles/Partials/fonts' as *;
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/colours' as *;
+@use '../../Styles/Partials/global' as *;
+
+
+.header {
+    &-banner {
+        display: flex;
+        width: 100%;
+        background-color: $Bay-Black;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 0;
+
+        &__inner {
+            display: flex;
+            width: 80%;
+            max-width: 1024px;
+            justify-content: space-between;
+            align-items: center;
+            &-text {
+                font-size: 14px;
+            }
+
+            &-arrow-left {
+                height: 14px;
+                width: 14px;
+                background-image: url('../../Assets/Icons/left-chevron.svg');
+            }
+
+            &-arrow-right {
+                height: 14px;
+                width: 14px;
+                background-image: url('../../Assets/Icons/right-chevron.svg');
+            }
+        }
+    }
+
+    &-main {
+        max-width: 1260px;
+        padding: 0 25px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+        &__utils {
+            font-size: 12px;
+            color: $Bay-Black;
+            padding: 0 10px;
+
+            &--border {
+                border-right: 1px solid #d8d8d8;
+            }
+
+            &-container {
+                display: flex;
+                width: 100%;
+                justify-content: right;
+                align-items: center;
+                padding: 10px 0 0;
+            }
+        }
+
+        &__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px 0 30px;
+            &-logo {
+                height: 22px;
+                width: 210px;
+                background-image: url('../../Assets/Logos/main.svg');
+            }
+
+            &-search    {
+                border: none;
+                &-bar {
+                border: 1px solid #d8d8d8;
+                padding: 6px 32px;
+                }
+            }
+
+            &-info--top {
+                font-size: 14px;
+                color: $Bay-Black;
+                font-weight: 700;
+                text-align: right;
+            }
+
+            &-info--bottom {
+                font-size: 14px;
+                color: #444444;
+                text-align: right;
+            }
+        }   
+    }
+
+    &-nav {
+        display: flex;
+        border-top: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+        height: 36px;
+        align-items: center;
+        justify-content: center;
+
+        &__item {
+            color: $Bay-Black;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 0 1rem;
+        }
+    }
+}

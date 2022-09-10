@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+import BrowsePage from './Pages/BrowsePage/BrowsePage';
+import CartPage from './Pages/CartPage/CartPage';
+import DetailsPage from './Pages/DetailsPage/DetailsPage';
+import HomePage from './Pages/HomePage/HomePage';
+import './Styles/App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <ScrollToTop>
+          <Routes>
+            <Route path='/' exact element={<HomePage />} />
+            <Route path='/item/:id' element={<DetailsPage />} />
+            <Route path='/cart' element={<CartPage />} />
+            <Route path='/:category' element={<BrowsePage />} />
+          </Routes>
+        </ScrollToTop>
+      </BrowserRouter>
   );
 }
 

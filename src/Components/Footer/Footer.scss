@@ -70,6 +70,7 @@
         &-links {
             display: flex;
             gap: 11px;
+            align-items: center;
         }
 
         &-link, &-copyright {
@@ -78,6 +79,7 @@
         }
 
         &-border {
+            height: 11px;
             border-right: 1px solid #666;
         }
     }

@@ -1,3 +1,84 @@
 @use '../../Styles/Partials/fonts' as *;
 @use '../../Styles/Partials/mixins' as *;
 @use '../../Styles/Partials/colours' as *;
+
+.footer {
+    &__container {
+        background-color: #e5e5e5;
+        width: 100%;
+        padding: 27px 0;
+    }
+
+    &__top {
+        width: 100%;
+        max-width: 1014px;
+        padding: 0 15px 32px;
+        border-bottom: 1px solid #ccc;
+        margin: auto;
+        display: flex;
+    }
+
+    &__bottom {
+        width: 100%;
+        max-width: 1014px;
+        padding: 24px 15px 0;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__column {
+        width: 25%;
+
+        &-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: $Bay-Black;
+            margin-bottom: 5px;
+        }
+
+        &-item {
+            font-size: 12px;
+            line-height: 28px;
+            color: $Bay-Black;
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > svg {
+            color: $Bay-Black;
+            height: 15px;
+        }
+
+        &-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+    }
+
+    &__legal {
+        &-container {
+            display: flex;
+            gap: 22px;
+        }
+        &-links {
+            display: flex;
+            gap: 11px;
+        }
+
+        &-link, &-copyright {
+            font-size: 13px;
+            color: #666;
+        }
+
+        &-border {
+            border-right: 1px solid #666;
+        }
+    }
+}

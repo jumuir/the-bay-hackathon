@@ -1,5 +1,8 @@
 import React from 'react';
 import './Header.scss';
+import { IoBagSharp, IoHeartOutline } from 'react-icons/io5';
+import { ImLocation } from 'react-icons/im'
+
 
 const Header = () => {
     return (<>
@@ -36,13 +39,13 @@ const Header = () => {
                         <p className='header-main__row-info--bottom'> 0 Points Available</p>
                     </div>
                     <div className='header-main__row-locations'>
-
+                        <ImLocation size={24}/>
                     </div>
                     <div className='header-main__row-wishlist'>
-
+                        <IoHeartOutline size={24}/>
                     </div>
                     <div className='header-main__row-cart'>
-
+                        <IoBagSharp size={24}/>
                     </div>
                 </div>
 

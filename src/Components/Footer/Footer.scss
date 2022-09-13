@@ -1,6 +1,7 @@
 @use '../../Styles/Partials/fonts' as *;
 @use '../../Styles/Partials/mixins' as *;
 @use '../../Styles/Partials/colours' as *;
+@use '../../Styles/Partials/global' as *;
 
 .footer {
     &__container {

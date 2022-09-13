@@ -68,6 +68,8 @@
             align-items: center;
             justify-content: space-between;
             padding: 25px 0 30px;
+            gap: 75px;
+
             &-logo {
                 height: 22px;
                 width: 210px;
@@ -81,15 +83,16 @@
             }
 
             &-search    {
+                width: 100%;
                 border: none;
                 &-bar {
                     background-image:  url('../../Assets/Icons/search-icon.svg');
                     background-position: 6px 50%;
                     background-repeat: no-repeat;
                     background-size: 15px;
-                    width: 304px;
                     border: 1px solid #d8d8d8;
                     padding: 6px 32px;
+                    flex-grow: 1;
                 }
             }
 

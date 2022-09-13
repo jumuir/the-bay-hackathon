@@ -6,6 +6,11 @@ input:focus {
 .underline {
     text-decoration: underline;
 }
+
+.bold {
+    font-weight: 700;
+}
+
 .red {
     color: $Bay-Red;
     font-weight: 700;

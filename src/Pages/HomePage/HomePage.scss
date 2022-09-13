@@ -1,0 +1,245 @@
+@use '../../Styles/Partials/fonts' as *;
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/colours' as *;
+@use '../../Styles/Partials/global' as *;
+
+.home {
+    &__hero {
+        width: 100%;
+        height: 50vw;
+        background-image: url('../../Assets/Images/hero-image-fathersday.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+
+        &-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(transparent, #122142);
+        }
+
+        &-title {
+            color: white;
+            font-size: 80px;
+            z-index: 1;
+        }
+    }
+
+    &__categories {
+        max-width: 1260px;
+        padding: 50px 25px;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &-title {
+            font-size: 32px;
+
+            &-bar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        &-all {
+            font-size: 24px;
+            text-decoration: underline;
+        }
+
+        &-cards {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+            padding: 25px 0;
+            gap: 25px;
+        }
+
+        &-card {
+            width: 18%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &-image {
+                width: 100%;
+                height: 260px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            &-text {
+                padding-top: 10px;
+                width: 100%;
+                text-align: left;
+                font-size: 24px;
+            }
+
+            &--1 {
+                background-image: url('../../Assets/Images/womens.jpg');
+            }
+            &--2 {
+                background-image: url('../../Assets/Images/mens.jpg');
+            }
+            &--3 {
+                background-image: url('../../Assets/Images/baby.jpg');
+            }
+            &--4 {
+                background-image: url('../../Assets/Images/home.jpg');
+            }
+            &--5 {
+                background-image: url('../../Assets/Images/electronics.jpg');
+            }
+            &--6 {
+                background-image: url('../../Assets/Images/handbags.jpg');
+            }
+            &--7 {
+                background-image: url('../../Assets/Images/beauty.jpg');
+            }
+            &--8 {
+                background-image: url('../../Assets/Images/travel.jpg');
+            }
+            &--9 {
+                background-image: url('../../Assets/Images/jewellery.jpg');
+            }
+            &--10 {
+                background-image: url('../../Assets/Images/HMC\ stripes.jpg');
+            }
+        }
+    }
+
+    &__deals {
+        max-width: 1260px;
+        padding: 25px 25px 50px;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &-title {
+            font-size: 32px;
+        }
+
+        &-cards {
+            display: flex;
+            width: 100%;
+            padding-top: 25px;
+            justify-content: space-between;
+        }
+
+        &-card {
+            width: 32%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &-image {
+                width: 100%;
+                height: 380px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                cursor: pointer;
+
+            }
+
+            &-title {
+                padding-top: 16px;
+                font-size: 24px;
+            }
+
+            &-text {
+                padding-top: 16px;
+                width: 100%;
+                height: 90px;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            &-button {
+                height: 40px;
+                font-size: 18px;
+                line-height: 40px;
+                width: 156px;
+                background-color: #666;
+                color: white;
+                cursor: pointer;
+                border: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            &--1 {
+                background-image: url('../../Assets/Images/deals-1.jpg');
+            }
+            &--2 {
+                background-image: url('../../Assets/Images/deals-2.jpg');
+            }
+            &--3 {
+                background-image: url('../../Assets/Images/deals-3.jpg');
+            }
+        }
+    }
+    
+    &__value {
+        width: 100%;
+        border-top: 1px solid #d8d8d8;
+
+        &-cards {
+            max-width: 1260px;
+            padding: 50px 25px;
+            display: flex;
+            margin: auto;
+
+            justify-content: space-between;
+        }
+
+        &-card {
+            width: 23%;
+
+            &-icon {
+                height: 50px;
+                width: 50px;
+            }
+
+            &-title {
+                font-size: 24px;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+.value-icon {
+    &--1 {
+        background-image: url('../../Assets/Icons/email-bgd-icon.svg');
+    }
+    &--2 {
+        background-image: url('../../Assets/Icons/shipping-bgd-icon.svg');
+    }
+    &--3 {
+        background-image: url('../../Assets/Icons/rewards-bgd-icon.svg');
+    }
+    &--4 {
+        background-image: url('../../Assets/Icons/app-bgd-icon.svg');
+    }
+}

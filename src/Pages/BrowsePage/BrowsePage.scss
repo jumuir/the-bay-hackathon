@@ -145,7 +145,6 @@
         padding: 25px 40px;
         display: flex;
         margin: auto;
-        align-items: center;
         justify-content: center;
 
         &-filters {
@@ -165,6 +164,126 @@
 
         &-items {
             width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        &-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            width: 32%;
+            padding-bottom: 50px;
+            
+            &-image {
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 320px;
+                width: 100%;
+
+                & > svg {
+                    position: absolute;
+                    & > path {
+                        stroke: #AC0000;
+                    }
+                    top: 6px;
+                    right: 6px;
+                }
+                
+                &--1 {
+                    background-image: url('../../Assets/Images/twowayzip-dress.jpg');
+                }
+                &--2 {
+                    background-image: url('../../Assets/Images/munziepaisley-dress.jpg');
+                }
+                &--3 {
+                    background-image: url('../../Assets/Images/seersucker-dress.jpg');
+                }
+                &--4 {
+                    background-image: url('../../Assets/Images/sunray-dress.jpg');
+                }
+                &--5 {
+                    background-image: url('../../Assets/Images/ribbedwaist-dress.jpg');
+                }
+                &--6 {
+                    background-image: url('../../Assets/Images/puffedsleeve-dress.jpg');
+                }
+                &--7 {
+                    background-image: url('../../Assets/Images/velvetwrap-dress.jpg');
+                }
+                &--8 {
+                    background-image: url('../../Assets/Images/floralchiffon-dress.jpg');
+                }
+                &--9 {
+                    background-image: url('../../Assets/Images/lace-dress.jpg');
+                }
+            }
+            
+            &-title {
+                font-size: 14px;
+                &-bar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+
+            &-rating {
+                font-size: 14px;
+            }
+
+            &-discount {
+                font-size: 14px;
+                color: white;
+                background-color: $Bay-Red;
+                padding: 0 10px;
+                line-height: 24px;
+                width: fit-content;
+            }
+
+            &-price {
+                &-bar {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+                font-size: 16px;
+                &--old {
+                    font-size: 12px;
+                    padding-left: 16px;
+                    text-decoration: line-through;
+                    color: #666;
+                }
+            }
+
+            &-colours {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 6px;
+            }
+
+            &-colour {
+                height: 24px;
+                width: 24px;
+                padding: 3px;
+
+                &--active {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid $Bay-Black;
+                }
+            }
         }
     }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import './BrowsePage.scss';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
+import { IoHeartOutline } from 'react-icons/io5';
 
 const BrowsePage = () => {
   return (<>
@@ -119,11 +120,174 @@ const BrowsePage = () => {
             <h3 className='browse__filter-header'>Neckline</h3>
             <AiOutlinePlus />
           </div>
-        </div>
-        
+        </div> 
       </div>
-        
       <div className='browse__body-items'>  
+        <div className='browse__item-card'>
+          <div className='browse__item-card-image browse__item-card-image--1'>
+            <IoHeartOutline size={24}/>
+          </div>
+          <div className='browse__item-card-title-bar'>
+            <h3 className='browse__item-card-title'>Two-Way Back-Zip Sheath Dress</h3>
+            <p className='browse__item-card-rating'></p>
+          </div >
+          <p className='browse__item-card-discount'>30% off</p>
+          <div className='browse__item-card-price-bar'>
+            <p className='browse__item-card-price'>$118.30</p>
+            <p className='browse__item-card-price--old'>$169</p>
+          </div>
+          <div className='browse__item-card-colours'>
+            <div className=' browse__item-card-colour--active'>
+              <div className='browse__item-card-colour' style={{backgroundColor:'#1E413B'}}></div>
+            </div>
+            <div className='browse__item-card-colour' style={{backgroundColor:'#173B99'}}></div>
+            <div className='browse__item-card-colour' style={{backgroundColor:'#29282D'}}></div>
+          </div>
+        </div>
+
+        <div className='browse__item-card'>
+          <div className='browse__item-card-image browse__item-card-image--2'>
+            <IoHeartOutline size={24}/>
+          </div>
+          <div className='browse__item-card-title-bar'>
+            <h3 className='browse__item-card-title'>Munze Paisley Sweater Dress</h3>
+            <p className='browse__item-card-rating'></p>
+          </div >
+          <div className='browse__item-card-price-bar'>
+            <p className='browse__item-card-price'>$140</p>
+          </div>
+          <div className='browse__item-card-colours'>
+          </div>
+        </div>
+
+        <div className='browse__item-card'>
+          <div className='browse__item-card-image browse__item-card-image--3'>
+            <IoHeartOutline size={24}/>
+          </div>
+          <div className='browse__item-card-title-bar'>
+            <h3 className='browse__item-card-title'>Seersucker Shirtdress</h3>
+            <p className='browse__item-card-rating'>&#9733; 5.0</p>
+          </div >
+          <p className='browse__item-card-discount'>50% off</p>
+          <div className='browse__item-card-price-bar'>
+            <p className='browse__item-card-price'>$29.99</p>
+            <p className='browse__item-card-price--old'>$59</p>
+          </div>
+          <div className='browse__item-card-colours'>
+            <div className=' browse__item-card-colour--active'>
+              <div className='browse__item-card-colour' style={{backgroundColor:'#CCD0DC'}}></div>
+            </div>
+            <div className='browse__item-card-colour' style={{backgroundColor:'#BBB6BA'}}></div>
+          </div>
+        </div>
+
+        <div className='browse__item-card'>
+          <div className='browse__item-card-image browse__item-card-image--4'>
+            <IoHeartOutline size={24}/>
+          </div>
+          <div className='browse__item-card-title-bar'>
+            <h3 className='browse__item-card-title'>Sunray Cutout Midi Shift Dress</h3>
+            <p className='browse__item-card-rating'></p>
+          </div >
+          <p className='browse__item-card-discount'>30% off</p>
+          <div className='browse__item-card-price-bar'>
+            <p className='browse__item-card-price'>$118.30</p>
+            <p className='browse__item-card-price--old'>$169</p>
+          </div>
+          <div className='browse__item-card-colours'>
+            <div className=' browse__item-card-colour--active'>
+              <div className='browse__item-card-colour' style={{backgroundColor:'#004D81'}}></div>
+            </div>
+            <div className='browse__item-card-colour' style={{backgroundColor:'#2F222C'}}></div>
+          </div>
+        </div>
+
+        <div className='browse__item-card'>
+          <div className='browse__item-card-image browse__item-card-image--5'>
+            <IoHeartOutline size={24}/>
+          </div>
+          <div className='browse__item-card-title-bar'>
+            <h3 className='browse__item-card-title'>Ribbed Waist-Tie Midi Dress</h3>
+            <p className='browse__item-card-rating'></p>
+          </div >
+          <div className='browse__item-card-price-bar'>
+            <p className='browse__item-card-price'>$89</p>
+          </div>
+          <div className='browse__item-card-colours'>
+            <div className=' browse__item-card-colour--active'>
+              <div className='browse__item-card-colour' style={{backgroundColor:'#323137'}}></div>
+            </div>
+            <div className='browse__item-card-colour' style={{backgroundColor:'#D52844'}}></div>
+          </div>
+        </div>
+
+        <div className='browse__item-card'>
+          <div className='browse__item-card-image browse__item-card-image--6'>
+            <IoHeartOutline size={24}/>
+          </div>
+          <div className='browse__item-card-title-bar'>
+            <h3 className='browse__item-card-title'>Puffed-Sleeve Sheath Dress</h3>
+            <p className='browse__item-card-rating'>&#9733; 4.7</p>
+          </div >
+          <div className='browse__item-card-price-bar'>
+            <p className='browse__item-card-price'>$99.99</p>
+          </div>
+        </div>
+
+        <div className='browse__item-card'>
+          <div className='browse__item-card-image browse__item-card-image--7'>
+            <IoHeartOutline size={24}/>
+          </div>
+          <div className='browse__item-card-title-bar'>
+            <h3 className='browse__item-card-title'>Velvet Wrap Gown</h3>
+            <p className='browse__item-card-rating'>&#9733; 3.5</p>
+          </div >
+          <div className='browse__item-card-price-bar'>
+            <p className='browse__item-card-price'>$249</p>
+          </div>
+        </div>
+
+        <div className='browse__item-card'>
+          <div className='browse__item-card-image browse__item-card-image--8'>
+            <IoHeartOutline size={24}/>
+          </div>
+          <div className='browse__item-card-title-bar'>
+            <h3 className='browse__item-card-title'>Floral Chiffon Wrap Midi Dress</h3>
+            <p className='browse__item-card-rating'></p>
+          </div >
+          <p className='browse__item-card-discount'>30% off</p>
+          <div className='browse__item-card-price-bar'>
+            <p className='browse__item-card-price'>$125.30</p>
+            <p className='browse__item-card-price--old'>$179</p>
+          </div>
+          <div className='browse__item-card-colours'>
+            <div className=' browse__item-card-colour--active'>
+              <div className='browse__item-card-colour' style={{backgroundColor:'#6D5A3B'}}></div>
+            </div>
+            <div className='browse__item-card-colour' style={{backgroundColor:'#193738'}}></div>
+          </div>
+        </div>
+
+        <div className='browse__item-card'>
+          <div className='browse__item-card-image browse__item-card-image--9'>
+            <IoHeartOutline size={24}/>
+          </div>
+          <div className='browse__item-card-title-bar'>
+            <h3 className='browse__item-card-title'>A-line Rosette Lace Dress</h3>
+            <p className='browse__item-card-rating'>&#9733; 4.8</p>
+          </div >
+          <p className='browse__item-card-discount'>25% off</p>
+          <div className='browse__item-card-price-bar'>
+            <p className='browse__item-card-price'>$299</p>
+            <p className='browse__item-card-price--old'>$400</p>
+          </div>
+          <div className='browse__item-card-colours'>
+            <div className=' browse__item-card-colour--active'>
+              <div className='browse__item-card-colour' style={{backgroundColor:'#413F55'}}></div>
+            </div>
+            <div className='browse__item-card-colour' style={{backgroundColor:'#CCCCCC'}}></div>
+          </div>
+        </div>
       </div>
     </section>
   </>)

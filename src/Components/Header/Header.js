@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.scss';
 import { IoBagSharp, IoHeartOutline } from 'react-icons/io5';
 import { ImLocation } from 'react-icons/im'
+import Dropdown from '../Dropdown/Dropdown';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
+    const [dropdown, setDropdown] = useState(false);
+
+    const onMouseEnter = () => {
+        setDropdown(true);
+    };
+    
+    const onMouseLeave = () => {
+        setDropdown(false);
+    };
+
+    const handleClick = () => {
+        setDropdown(!dropdown);
+    };
+
+
     return (<>
         <section className='header-banner'>
             <div className='header-banner__inner'>
@@ -29,7 +46,9 @@ const Header = () => {
                 </p>
             </div>
             <div className='header-main__row'>
-                <div className='header-main__row-logo'></div>
+                <Link to='/'>
+                    <div className='header-main__row-logo'></div>
+                </Link>
                 <div className='header-main__row-search-bar'>
                     <input className='header-main__row-search' placeholder='Search for Products or Brands'/>  
                 </div>
@@ -54,7 +73,10 @@ const Header = () => {
         <section className='header-nav'>
             <div className='header-nav__item'>NEW</div>
             <div className='header-nav__item'>DESIGNER</div>
-            <div className='header-nav__item'>WOMEN</div>
+            <div className='header-nav__item' onMouseEnter={onMouseEnter} onClick={handleClick} onMouseLeave={onMouseLeave}>
+                WOMEN
+                {dropdown && <Dropdown /> }
+            </div>
             <div className='header-nav__item'>SHOES</div>
             <div className='header-nav__item'>BEAUTY</div>
             <div className='header-nav__item'>MEN</div>

@@ -177,8 +177,37 @@
             flex-direction: column;
             justify-content: center;
             gap: 10px;
-            width: 32%;
+            width: 30%;
             padding-bottom: 50px;
+            position: relative;
+            cursor: pointer;
+            &:hover > :first-child {
+                display: block;
+            }
+
+            &-buy {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                border: 1px solid #d8d8d8;
+                z-index: 1;
+                display: none;
+
+                &-link {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    line-height: 40px;
+                    text-align: center;
+                    width: 100%;
+                    background-color: $Bay-Black;
+                    color: white;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
             
             &-image {
                 position: relative;
@@ -254,12 +283,22 @@
                     justify-content: flex-start;
                     align-items: center;
                 }
+
                 font-size: 16px;
+                
                 &--old {
                     font-size: 12px;
                     padding-left: 16px;
                     text-decoration: line-through;
                     color: #666;
+                }
+
+                &-final {
+                    color: $Bay-Red;
+                    flex-grow: 1;
+                    text-align: right;
+                    padding-right: 10px;
+                    font-size: 12px;
                 }
             }
 

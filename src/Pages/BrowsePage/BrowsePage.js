@@ -124,6 +124,9 @@ const BrowsePage = () => {
       </div>
       <div className='browse__body-items'>  
         <div className='browse__item-card'>
+          <div className='browse__item-card-buy'>
+            <p className='browse__item-card-buy-link'>ADD TO BAG</p>
+          </div>
           <div className='browse__item-card-image browse__item-card-image--1'>
             <IoHeartOutline size={24}/>
           </div>
@@ -146,6 +149,9 @@ const BrowsePage = () => {
         </div>
 
         <div className='browse__item-card'>
+          <div className='browse__item-card-buy'>
+            <p className='browse__item-card-buy-link'>ADD TO BAG</p>
+          </div>
           <div className='browse__item-card-image browse__item-card-image--2'>
             <IoHeartOutline size={24}/>
           </div>
@@ -161,6 +167,9 @@ const BrowsePage = () => {
         </div>
 
         <div className='browse__item-card'>
+          <div className='browse__item-card-buy'>
+            <p className='browse__item-card-buy-link'>ADD TO BAG</p>
+          </div>
           <div className='browse__item-card-image browse__item-card-image--3'>
             <IoHeartOutline size={24}/>
           </div>
@@ -182,6 +191,9 @@ const BrowsePage = () => {
         </div>
 
         <div className='browse__item-card'>
+          <div className='browse__item-card-buy'>
+            <p className='browse__item-card-buy-link'>ADD TO BAG</p>
+          </div>
           <div className='browse__item-card-image browse__item-card-image--4'>
             <IoHeartOutline size={24}/>
           </div>
@@ -193,6 +205,7 @@ const BrowsePage = () => {
           <div className='browse__item-card-price-bar'>
             <p className='browse__item-card-price'>$118.30</p>
             <p className='browse__item-card-price--old'>$169</p>
+            <p className='browse__item-card-price-final'>Final Sale</p>
           </div>
           <div className='browse__item-card-colours'>
             <div className=' browse__item-card-colour--active'>
@@ -203,6 +216,9 @@ const BrowsePage = () => {
         </div>
 
         <div className='browse__item-card'>
+          <div className='browse__item-card-buy'>
+            <p className='browse__item-card-buy-link'>ADD TO BAG</p>
+          </div>
           <div className='browse__item-card-image browse__item-card-image--5'>
             <IoHeartOutline size={24}/>
           </div>
@@ -222,6 +238,9 @@ const BrowsePage = () => {
         </div>
 
         <div className='browse__item-card'>
+          <div className='browse__item-card-buy'>
+            <p className='browse__item-card-buy-link'>ADD TO BAG</p>
+          </div>
           <div className='browse__item-card-image browse__item-card-image--6'>
             <IoHeartOutline size={24}/>
           </div>
@@ -235,6 +254,9 @@ const BrowsePage = () => {
         </div>
 
         <div className='browse__item-card'>
+          <div className='browse__item-card-buy'>
+            <p className='browse__item-card-buy-link'>ADD TO BAG</p>
+          </div>
           <div className='browse__item-card-image browse__item-card-image--7'>
             <IoHeartOutline size={24}/>
           </div>
@@ -248,6 +270,9 @@ const BrowsePage = () => {
         </div>
 
         <div className='browse__item-card'>
+          <div className='browse__item-card-buy'>
+            <p className='browse__item-card-buy-link'>ADD TO BAG</p>
+          </div>
           <div className='browse__item-card-image browse__item-card-image--8'>
             <IoHeartOutline size={24}/>
           </div>
@@ -259,6 +284,7 @@ const BrowsePage = () => {
           <div className='browse__item-card-price-bar'>
             <p className='browse__item-card-price'>$125.30</p>
             <p className='browse__item-card-price--old'>$179</p>
+            <p className='browse__item-card-price-final'>Final Sale</p>
           </div>
           <div className='browse__item-card-colours'>
             <div className=' browse__item-card-colour--active'>
@@ -269,6 +295,9 @@ const BrowsePage = () => {
         </div>
 
         <div className='browse__item-card'>
+          <div className='browse__item-card-buy'>
+            <p className='browse__item-card-buy-link'>ADD TO BAG</p>
+          </div>
           <div className='browse__item-card-image browse__item-card-image--9'>
             <IoHeartOutline size={24}/>
           </div>

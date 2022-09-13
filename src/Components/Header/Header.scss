@@ -125,12 +125,22 @@
         height: 36px;
         align-items: center;
         justify-content: center;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 5;
 
         &__item {
             color: $Bay-Black;
             font-size: 13px;
             font-weight: 700;
+            line-height: 30px;
             padding: 0 1rem;
+            &:hover {
+                cursor: pointer;
+                border-top: 2px solid transparent;
+                border-bottom: 2px solid $Bay-Navy;
+            }
         }
     }
 }

@@ -93,6 +93,7 @@
             align-items: center;
             justify-content: center;
             width: 15%;
+            cursor: pointer;
 
             &-image {
                 height: 270px;
@@ -124,6 +125,10 @@
                 width: 100%;
                 text-align: left;
                 font-size: 14px;
+                padding-left: 6px;
+                :hover > & {
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -137,16 +142,62 @@
 
     &__body {
         max-width: 1260px;
-        padding: 0 25px 25px;
+        padding: 25px 40px;
         display: flex;
         margin: auto;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
 
         &-filters {
-            width: 25%;
-            
+            width: 20%;
+            padding: 0 15px;
+
+            &-search {
+                &-bar {
+                    width: 100%;
+                }
+                width: 100%;
+                color: $Bay-Black;
+                border: 1px solid $Bay-Black;
+                padding: 6px;
+            }
+        }
+
+        &-items {
+            width: 80%;
+        }
+    }
+
+    &__filter {
+        &-container {
+            padding: 18px 0;
+            border-bottom: 1px solid #d8d8d8;
+        }
+
+        &-header {
+            font-size: 14px;
+            :hover > & {
+                text-decoration: underline;
+            }
+            &-container {
+                cursor: pointer;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        &-subheader {
+            padding-top: 12px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        &-type {
+            font-size: 12px;
+            padding-top: 12px;
+            padding-left: 15px;
         }
     }
 }

@@ -31,7 +31,7 @@ const Header = () => {
             <div className='header-main__row'>
                 <div className='header-main__row-logo'></div>
                 <div className='header-main__row-search-bar'>
-                    <input className='header-main__row-search' placeholder='Search'/>  
+                    <input className='header-main__row-search' placeholder='Search for Products or Brands'/>  
                 </div>
                 <div className='header-main__row-right'>
                     <div className='header-main__row-info'>

@@ -1,0 +1,253 @@
+@use './../../Styles/Partials/colours';
+
+
+.product-detail-container {
+   display: flex;
+   gap: 40px;
+   margin: 40px;
+   margin-top: 60px;
+   color: colours.$Bay-DarkGrey;
+  }
+
+  .product-detail-image{
+    border-radius: 15px;
+     background-color: colours.$Bay-White;
+  
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+
+  .product-detail-image:hover{
+    background-color: colours.$Bay-DarkGrey;
+  
+  }
+  .small-images-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .small-image{
+    border-radius: 8px;
+    background-color: #ebebeb;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+  }
+  
+  .selected-image{
+    background-color: colours.$Bay-DarkGrey;
+  }
+
+  .reviews{
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .product-detail-desc h4{
+    margin-top: 10px;
+  }
+
+  .product-detail-desc p{
+    margin: 10px;
+  
+  }
+  .reviews p{
+    color: #324d67;
+    margin-top: 0px;
+  }
+
+  .product-detail-desc .price{
+    font-weight: 700 ;
+    font-size: 26px;
+    margin-top: 30px;
+    color:colours.$Bay-DarkGrey;
+  }
+
+  // .price {
+  //   &:first-of-type {
+  //     text-decoration: line-through;        
+  //   }
+  // }
+
+  .product-detail-desc .quantity{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px ;
+    align-items: center;
+  }
+  .product-detail-desc .buttons{
+    display: flex;
+    gap: 30px;
+  }
+  
+  .product-free-shipping {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right:  -15px;
+    margin-left: -15px;
+    box-sizing: border-box;
+  }
+
+  .product-free-shipping-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .product-free-shipping-label {
+    background: colours.$Bay-LightGrey;
+    margin-top: 12px;
+    align-items: center!important;
+    display: inline-flex!important;
+  }
+  
+  .product-free-shipping-truck {
+    width: 20px;
+    height: 20px;
+
+  }
+
+  .product-free-shipping-desc {
+    margin-left: 0.5rem!important;
+  }
+
+  .product-free-shipping-bold {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .product-message-section {
+    display: block;
+    font-size: 18px;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+
+  .product-message-text {
+    font-size: 18px;
+    color: colours.$Bay-Red;
+    font-weight: 700;
+  }
+
+  .product-message-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    white-space: nowrap;
+  }
+
+  .product-gift-container {
+    display: flex;
+    color: #222;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 23px;
+    margin: 2rem 1rem;
+  }
+
+  .product-gift-box {
+    width: 25px;
+    height: 23px;
+    margin-left: -3px;
+  }
+
+  .product-gift-desc {
+    margin: 0 10px 10px 10px;
+  }
+
+  .product-sale-container {
+    border-top: 1px solid colours.$Bay-LineGrey;
+    padding: 27px 0 0;
+    margin-top: 27px;
+    position: relative;
+  }
+
+  .product-sale-colour {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0 3rem 0;
+  }
+
+  .product-sale-size {
+   font-weight: 700;
+   font-size: 18px;
+   margin-bottom: 9px;
+  }
+
+  .fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  .product-sale-size-chart {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+  }
+
+  .product-sale-size-grid {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(6,auto)!important;
+  grid-gap: 1px;
+  }
+
+  .product-sale-size-box {
+
+  }
+
+
+  .buttons .add-to-cart{
+    padding: 10px 20px;
+    border: 2px solid colours.$Bay-Black ;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: colours.$Bay-Black;
+    color: colours.$Bay-White;
+    cursor: pointer;
+    width: 200px;
+     transform: scale(1, 1);
+    transition: transform 0.5s ease;
+  }
+  .buttons .add-to-cart:hover{
+    transform:scale(1.1,1.1);
+    background-color: colours.$Bay-Blue;
+  }
+
+  .quantity-desc{
+    border: 1px solid gray;
+  padding: 6px;
+  }
+  .quantity-desc span{
+    font-size: 16px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  .quantity-desc .minus{
+    border-right: 1px solid gray;
+    color: #f02d34;
+  }
+  .quantity-desc .num{
+    border-right: 1px solid gray;
+    font-size: 20px;
+  }
+  .quantity-desc .plus{
+    color: rgb(49, 168, 49);
+  
+  }

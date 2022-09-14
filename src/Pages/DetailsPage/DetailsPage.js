@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
-import Dress from '../../Assets/Images/dress2.jpeg';
+import Dress from '../../Assets/Images/floralchiffon-dress.jpg';
 import Truck from '../../Assets/Icons/shipping-icon.svg';
 import Gift from '../../Assets/Icons/gift-Icon.svg';
 import './DetailsPage.scss';

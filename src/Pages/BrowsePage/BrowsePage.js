@@ -2,8 +2,16 @@ import React from 'react';
 import './BrowsePage.scss';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { IoHeartOutline } from 'react-icons/io5';
+import { useNavigate } from 'react-router-dom';
 
 const BrowsePage = () => {
+
+  let navigate = useNavigate();
+  
+  const handlePage = () => {
+    navigate("/item/ck-floral-chiffon-wrap-midi-dress");
+  }
+
   return (<>
     <section className='browse__hero'>
       <div className='browse__hero-overlay'></div>
@@ -131,9 +139,10 @@ const BrowsePage = () => {
             <IoHeartOutline size={24}/>
           </div>
           <div className='browse__item-card-title-bar'>
-            <h3 className='browse__item-card-title'>Two-Way Back-Zip Sheath Dress</h3>
+            <h3 className='browse__item-card-title bold'>Calvin Klein</h3>
             <p className='browse__item-card-rating'></p>
           </div >
+          <h3 className='browse__item-card-title'>Two-Way Back-Zip Sheath Dress</h3>
           <p className='browse__item-card-discount'>30% off</p>
           <div className='browse__item-card-price-bar'>
             <p className='browse__item-card-price'>$118.30</p>
@@ -156,9 +165,10 @@ const BrowsePage = () => {
             <IoHeartOutline size={24}/>
           </div>
           <div className='browse__item-card-title-bar'>
-            <h3 className='browse__item-card-title'>Munze Paisley Sweater Dress</h3>
+            <h3 className='browse__item-card-title bold'>Lauren Ralph Lauren</h3>
             <p className='browse__item-card-rating'></p>
           </div >
+          <h3 className='browse__item-card-title'>Munzie Paisley Sweater Dress</h3>
           <div className='browse__item-card-price-bar'>
             <p className='browse__item-card-price'>$140</p>
           </div>
@@ -174,9 +184,10 @@ const BrowsePage = () => {
             <IoHeartOutline size={24}/>
           </div>
           <div className='browse__item-card-title-bar'>
-            <h3 className='browse__item-card-title'>Seersucker Shirtdress</h3>
+            <h3 className='browse__item-card-title bold'>Karen Scott</h3>
             <p className='browse__item-card-rating'>&#9733; 5.0</p>
           </div >
+          <h3 className='browse__item-card-title'>Seersucker Shirtdress</h3>
           <p className='browse__item-card-discount'>50% off</p>
           <div className='browse__item-card-price-bar'>
             <p className='browse__item-card-price'>$29.99</p>
@@ -198,9 +209,10 @@ const BrowsePage = () => {
             <IoHeartOutline size={24}/>
           </div>
           <div className='browse__item-card-title-bar'>
-            <h3 className='browse__item-card-title'>Sunray Cutout Midi Shift Dress</h3>
+            <h3 className='browse__item-card-title bold'>Calvin Klein</h3>
             <p className='browse__item-card-rating'></p>
           </div >
+          <h3 className='browse__item-card-title'>Sunray Cutout Midi Shift Dress</h3>
           <p className='browse__item-card-discount'>30% off</p>
           <div className='browse__item-card-price-bar'>
             <p className='browse__item-card-price'>$118.30</p>
@@ -223,9 +235,10 @@ const BrowsePage = () => {
             <IoHeartOutline size={24}/>
           </div>
           <div className='browse__item-card-title-bar'>
-            <h3 className='browse__item-card-title'>Ribbed Waist-Tie Midi Dress</h3>
+            <h3 className='browse__item-card-title bold'>Tommy Hilfiger</h3>
             <p className='browse__item-card-rating'></p>
           </div >
+          <h3 className='browse__item-card-title'>Ribbed Waist-Tie Midi Dress</h3>
           <div className='browse__item-card-price-bar'>
             <p className='browse__item-card-price'>$89</p>
           </div>
@@ -245,9 +258,10 @@ const BrowsePage = () => {
             <IoHeartOutline size={24}/>
           </div>
           <div className='browse__item-card-title-bar'>
-            <h3 className='browse__item-card-title'>Puffed-Sleeve Sheath Dress</h3>
+            <h3 className='browse__item-card-title bold'>Calvin Klein</h3>
             <p className='browse__item-card-rating'>&#9733; 4.7</p>
           </div >
+          <h3 className='browse__item-card-title'>Puffed-Sleeve Sheath Dress</h3>
           <div className='browse__item-card-price-bar'>
             <p className='browse__item-card-price'>$99.99</p>
           </div>
@@ -261,15 +275,16 @@ const BrowsePage = () => {
             <IoHeartOutline size={24}/>
           </div>
           <div className='browse__item-card-title-bar'>
-            <h3 className='browse__item-card-title'>Velvet Wrap Gown</h3>
+            <h3 className='browse__item-card-title bold'>Betsy & Adam</h3>
             <p className='browse__item-card-rating'>&#9733; 3.5</p>
           </div >
+          <h3 className='browse__item-card-title'>Velvet Wrap Gown</h3>
           <div className='browse__item-card-price-bar'>
             <p className='browse__item-card-price'>$249</p>
           </div>
         </div>
-
-        <div className='browse__item-card'>
+        
+        <div className='browse__item-card' onClick={handlePage}>
           <div className='browse__item-card-buy'>
             <p className='browse__item-card-buy-link'>ADD TO BAG</p>
           </div>
@@ -277,9 +292,10 @@ const BrowsePage = () => {
             <IoHeartOutline size={24}/>
           </div>
           <div className='browse__item-card-title-bar'>
-            <h3 className='browse__item-card-title'>Floral Chiffon Wrap Midi Dress</h3>
+            <h3 className='browse__item-card-title bold'>Calvin Klein</h3>
             <p className='browse__item-card-rating'></p>
           </div >
+          <h3 className='browse__item-card-title'>Floral Chiffon Wrap Midi Dress</h3>
           <p className='browse__item-card-discount'>30% off</p>
           <div className='browse__item-card-price-bar'>
             <p className='browse__item-card-price'>$125.30</p>
@@ -302,9 +318,10 @@ const BrowsePage = () => {
             <IoHeartOutline size={24}/>
           </div>
           <div className='browse__item-card-title-bar'>
-            <h3 className='browse__item-card-title'>A-line Rosette Lace Dress</h3>
+            <h3 className='browse__item-card-title bold'>Adrianna Papell</h3>
             <p className='browse__item-card-rating'>&#9733; 4.8</p>
           </div >
+          <h3 className='browse__item-card-title'>A-line Rosette Lace Dress</h3>
           <p className='browse__item-card-discount'>25% off</p>
           <div className='browse__item-card-price-bar'>
             <p className='browse__item-card-price'>$299</p>

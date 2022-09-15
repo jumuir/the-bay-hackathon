@@ -9,10 +9,14 @@
    color: colours.$Bay-DarkGrey;
   }
 
+  h1 {
+  font-weight: 800;
+  }
+
   .product-detail-image{
+    display:block;
     border-radius: 15px;
-     background-color: colours.$Bay-White;
-  
+    background-color: colours.$Bay-White;
     width: 400px;
     height: 400px;
     cursor: pointer;
@@ -23,29 +27,39 @@
     background-color: colours.$Bay-DarkGrey;
   
   }
-  .small-images-container{
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-  }
+  // .small-images-container{
+  //   display: flex;
+  //   gap: 10px;
+  //   margin-top: 20px;
+  // }
 
-  .small-image{
-    border-radius: 8px;
-    background-color: #ebebeb;
-    width: 70px;
-    height: 70px;
-    cursor: pointer;
-  }
+  // .small-image{
+  //   border-radius: 8px;
+  //   background-color: #ebebeb;
+  //   width: 70px;
+  //   height: 70px;
+  //   cursor: pointer;
+  // }
   
-  .selected-image{
-    background-color: colours.$Bay-DarkGrey;
-  }
+  // .selected-image{
+  //   background-color: colours.$Bay-DarkGrey;
+  // }
 
   .reviews{
     margin-top: 10px;
     display: flex;
     gap: 5px;
     align-items: center;
+  }
+
+  .reviews-star {
+  width:20px;
+  margin: 3px;
+  }
+
+  .reviews-number {
+    font-weight:800;
+    font-size: 18px;
   }
   
   .product-detail-desc h4{
@@ -62,17 +76,22 @@
   }
 
   .product-detail-desc .price{
-    font-weight: 700 ;
     font-size: 26px;
     margin-top: 30px;
     color:colours.$Bay-DarkGrey;
   }
 
-  // .price {
-  //   &:first-of-type {
-  //     text-decoration: line-through;        
-  //   }
-  // }
+  .price {
+      text-decoration: line-through;  
+      display: inline-block;    
+    }
+
+  .sale-price {
+    font-weight: 700;
+    display: inline-block;
+   font-size: 26px;
+  }
+
 
   .product-detail-desc .quantity{
     display: flex;
@@ -110,8 +129,8 @@
   }
   
   .product-free-shipping-truck {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 
   }
 
@@ -143,13 +162,19 @@
     white-space: nowrap;
   }
 
+  .product-message-image {
+   width: 100px;
+   height:15px;
+   margin: 0 10px;
+  }
+
   .product-gift-container {
     display: flex;
     color: #222;
     font-size: 18px;
     letter-spacing: 0;
     line-height: 23px;
-    margin: 2rem 1rem;
+    margin: 1rem 0 1rem 0;
   }
 
   .product-gift-box {
@@ -165,27 +190,24 @@
   .product-sale-container {
     border-top: 1px solid colours.$Bay-LineGrey;
     padding: 27px 0 0;
-    margin-top: 27px;
+    margin-top: 30px;
     position: relative;
   }
 
   .product-sale-colour {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 1rem 0;
   }
-
+  
+  .product-sale-image {
+    margin: 3px;
+    margin-bottom:1rem;
+  }
   .product-sale-size {
    font-weight: 700;
    font-size: 18px;
    margin-bottom: 9px;
-  }
-
-  .fieldset {
-    min-width: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
   }
 
   .product-sale-size-chart {
@@ -203,51 +225,112 @@
   .product-sale-size-grid {
   display: grid;
   flex-wrap: wrap;
-  grid-template-columns: repeat(6,auto)!important;
-  grid-gap: 1px;
+  grid-template-columns: repeat(4,auto)!important;
+  grid-gap: 20px;
   }
 
   .product-sale-size-box {
-
+   list-style: none;
+   border: 2px solid colours.$Bay-Black;
+   text-align: center;
+   font-weight: 700;
+   height: 35px;
   }
 
+  .product-sale-size-box:nth-child(odd) {
+    --gradient-color:#ccc;
+    background: linear-gradient(to bottom right,transparent calc(50% - 1px),var(--gradient-color) calc(50% - 1px),var(--gradient-color) 50%,transparent 0);
+  }
+
+  .product-sale-size-box:hover {
+    background-color: colours.$Bay-LightGrey;
+  }
+
+  .product-sale-size-box:focus {
+    border: 5px solid colours.$Bay-Black;
+  }
 
   .buttons .add-to-cart{
     padding: 10px 20px;
     border: 2px solid colours.$Bay-Black ;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     background-color: colours.$Bay-Black;
     color: colours.$Bay-White;
     cursor: pointer;
-    width: 200px;
-     transform: scale(1, 1);
-    transition: transform 0.5s ease;
+    width: 100%;
   }
   .buttons .add-to-cart:hover{
-    transform:scale(1.1,1.1);
     background-color: colours.$Bay-Blue;
   }
 
   .quantity-desc{
-    border: 1px solid gray;
+    border: 1px solid colours.$Bay-Black;
   padding: 6px;
   }
+  
   .quantity-desc span{
     font-size: 16px;
     padding: 6px 12px;
     cursor: pointer;
   }
   .quantity-desc .minus{
-    border-right: 1px solid gray;
-    color: #f02d34;
+    border-right: 1px solid colours.$Bay-Black;
   }
+
   .quantity-desc .num{
-    border-right: 1px solid gray;
+    border-right: 1px solid colours.$Bay-DarkGrey;
     font-size: 20px;
   }
+
   .quantity-desc .plus{
     color: rgb(49, 168, 49);
-  
   }
+
+  .product-details-bay{
+  display:flex;
+  margin: 2rem 0 1rem 0;
+  }
+
+  .product-details-logo {
+    width:25px;
+    margin-right:15px;
+  }
+
+  .product-details-desc {
+  font-weight: 700;
+  margin-bottom: 10px;
+  }
+
+ .product-details-blue {
+  font-size: 16px;
+  margin-top: 14px;
+ }
+
+ .product-details-blue > span:last-child  {
+ color: colours.$Bay-Blue;
+ font-weight: 700;
+ }
+
+  label {
+   margin-left: 10px;
+  }
+
+  .product-details-desc-flex {
+    font-weight: 700;
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  li {
+    list-style-position: inside;
+  }
+
+.product-details-list {
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

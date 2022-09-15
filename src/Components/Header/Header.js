@@ -3,7 +3,7 @@ import './Header.scss';
 import { IoBagSharp, IoHeartOutline } from 'react-icons/io5';
 import { ImLocation } from 'react-icons/im'
 import Dropdown from '../Dropdown/Dropdown';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Header = () => {
@@ -20,6 +20,12 @@ const Header = () => {
     const handleClick = () => {
         setDropdown(!dropdown);
     };
+    
+    const navigate = useNavigate();
+
+    const openCart = () => {
+        navigate(`/cart`)
+      }
 
 
     return (<>
@@ -64,7 +70,7 @@ const Header = () => {
                         <IoHeartOutline size={24}/>
                     </div>
                     <div className='header-main__row-cart'>
-                        <IoBagSharp size={24}/>
+                        <IoBagSharp onClick={openCart} size={24}/>
                     </div>
                 </div>
 

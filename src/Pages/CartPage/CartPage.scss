@@ -1,0 +1,218 @@
+@use './../../Styles/Partials/colours';
+
+.shopping-bag-container {
+        display: inline-block;
+        gap: 40px;
+        margin: 40px;
+        margin-top: 60px;
+        color: colours.$Bay-DarkGrey;
+}
+
+.shopping-bag-container span {
+    font-size:25px;
+    padding-left:2.5rem;
+}
+
+.shopping-bag__body {
+    max-width: 1260px;
+    padding: 25px 40px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.shopping-bag-nav {
+    display: flex;
+    height: 36px;
+    align-items: center;
+    margin-top:15px;
+    position: sticky;
+    top: 0;
+    gap: 110px;
+    background-color: colours.$Bay-LightGrey;
+    z-index: 5;
+}
+
+.shopping-bag-items {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 2px solid #d8d8d8;
+}
+.shopping-bag__item {
+        color: colours.$Bay-Black;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 30px;
+        padding: 0 1rem;
+        &:hover {
+            cursor: pointer;
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid colours.$Bay-Blue;
+        }
+    }
+.shopping-bag__item-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width:max-content;
+}
+
+.shopping-bag__item-card-image img{
+    height: 17vh;
+    width: 80px;
+    padding-top: 10px;
+}
+
+
+.shopping-bag__item-card-title-bar {
+    padding-top:10px;
+}
+
+.shopping-bag__item-card-title{
+    font-size: 14px;
+    font-weight: 700;
+}
+.shopping-bag__item-card-desc{
+  font-size: 10px;
+}
+
+.shopping-bag__item-card-sale {
+    color: colours.$Bay-Red;
+    font-size:12px;
+}
+
+.shopping-bag__item-card-delivery {
+    padding-top:45px;
+    font-size:12px;
+}
+
+.shopping-bag__item-card-price-bar {
+    padding:50px;
+}
+
+.shopping-bag__item-card-price--old {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: #666;
+}
+
+.shopping-bag__item-card-price {
+ font-size:16px;
+}
+
+.shopping-bag__item-card-qty {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.shopping-bag__quantity-desc {
+    border: 1px solid colours.$Bay-LineGrey;
+    padding: 2px;
+      }
+
+.shopping-bag__quantity-desc span {
+    
+    font-size: 12px;
+    padding: 1px 10px;
+    cursor: pointer;
+}
+
+.shopping-bag__quantity-desc .shopping-bag__minus {
+border-right: 1px solid colours.$Bay-LineGrey
+}
+
+.shopping-bag__quantity-desc .shopping-bag__num {
+font-size: 14px;
+border-right: 1px solid colours.$Bay-LineGrey;
+}
+
+.shopping-bag__item-card-total{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left:49px;
+    padding-right: 15px;
+}
+
+.shopping-bag__item-card-sum {
+ font-weight:700;
+ font-size: 20px;
+}
+
+.shopping-bag__item-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.wish-list__title {
+    font-size:25px;
+    padding-left:2.5rem;
+    padding-top: 1.5rem;
+}
+
+.shopping-bag-summary {
+    width: 30%;
+    padding: 0 15px;
+}
+
+.shopping__summary-container {
+    padding: 18px 0;
+}
+
+.shopping__summary-title {
+    font-weight:700;
+    padding: 0 0 25px 0;
+    border-bottom: 2px solid colours.$Bay-LineGrey;
+}
+
+.shopping__summary-order-container {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: colours.$Bay-LightGrey;
+}
+
+.shopping__summary-order-subtotal {
+padding: 10px 0;   
+}
+
+.shopping__summary-order-num-bold {
+font-weight: 700;
+}
+
+.shopping__summary-order-line {
+border-bottom: 2px solid colours.$Bay-LineGrey;
+padding-bottom: 10px;
+}
+
+.shopping__summary-order-desc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.shopping__summary-paypal {
+    padding: 22px 20px;
+    border: 2px solid colours.$Bay-LineGrey ;
+    margin-top: 20px;
+    font-size: 18px;
+    background: url('../../Assets/Icons/paypal.jpg') 95px 15px no-repeat;
+    cursor: pointer;
+    width: 100%;
+}
+
+.shopping__summary-chev {
+padding-top:10px;
+}

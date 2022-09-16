@@ -15,6 +15,7 @@ import FauxJacket from '../../Assets/Images/fauxjacket.jpg';
 const CartPage = () => {
   return (
     <>
+    <div className='shopping-bag'>
     <div className='shopping-bag-container'><span>Shopping Bag (1)</span>
     <section className='shopping-bag__body'>
     <div className='shopping-bag-items'>
@@ -39,17 +40,18 @@ const CartPage = () => {
        <p className='shopping-bag__item-card-sale'>Final Sale</p>
       </div>
 
-      <div ClassName='shopping-bag__item-card-delivery'>
+      <div className='shopping-bag__item-card-delivery'>
       <form>
-            <div>
+        <div className='bag-input'>
               <input type="radio" />
-              <label for="shipto" >
+              <label htmlFor="shipto" >
                 Ship this Item
               </label></div>
+              <div className='bag-input'>   
             <input type="radio" />
-            <label for="shipto" >
+            <label htmlFor="shipto" >
               Pickup in Store
-            </label>
+            </label></div>
           </form>
       </div>
     
@@ -145,17 +147,18 @@ const CartPage = () => {
        <p className='shopping-bag__item-card-desc'>Colour: Black</p>
       </div>
 
-      <div ClassName='shopping-bag__item-card-delivery'>
+      <div className='shopping-bag__item-card-delivery'>
       <form>
-            <div>
+            <div className='bag-input'>
               <input type="radio" />
-              <label for="shipto" >
+              <label htmlFor="shipto" >
                 Ship this Item
               </label></div>
+            <div className='bag-input'>
             <input type="radio" />
-            <label for="shipto" >
+            <label htmlFor="shipto" >
               Pickup in Store
-            </label>
+            </label></div>
           </form>
       </div>
     
@@ -172,7 +175,7 @@ const CartPage = () => {
      </div>
     
      <div className='shopping-bag__item-card-total'>
-      <p  className='shopping-bag__item-card-sum'> &nbsp; &nbsp; &nbsp; &nbsp; $99</p>
+      <p  className='shopping-bag__item-card-sum'>$99</p>
      </div>
 
      <div className='shopping-bag__item-card-icon'>
@@ -218,17 +221,20 @@ const CartPage = () => {
        <p className='shopping-bag__item-card-desc'>Colour: Mesa Rose</p>
       </div>
 
-      <div ClassName='shopping-bag__item-card-delivery'>
+      <div className='shopping-bag__item-card-delivery'>
       <form>
-            <div>
+      <div className='bag-input'>
+
               <input type="radio" />
-              <label for="shipto" >
+              <label htmlFor="shipto" >
                 Ship this Item
               </label></div>
+            <div className='bag-input'>
+
             <input type="radio" />
-            <label for="shipto" >
+            <label htmlFor="shipto" >
               Pickup in Store
-            </label>
+            </label></div>
           </form>
       </div>
     
@@ -245,7 +251,7 @@ const CartPage = () => {
      </div>
     
      <div className='shopping-bag__item-card-total'>
-      <p  className='shopping-bag__item-card-sum'>&nbsp; &nbsp; $248</p>
+      <p  className='shopping-bag__item-card-sum'>$248</p>
      </div>
 
      <div className='shopping-bag__item-card-icon'>
@@ -263,6 +269,7 @@ const CartPage = () => {
 
       
     </section>
+    </div>
     </div>
     </>
   )

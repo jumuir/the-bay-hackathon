@@ -1,10 +1,14 @@
 @use './../../Styles/Partials/colours';
+.shopping-bag {
+    display: flex;
+    justify-content: center;
+}
 
 .shopping-bag-container {
         display: inline-block;
         gap: 40px;
-        margin: 40px;
-        margin-top: 60px;
+        max-width: 1200px;
+        margin: 60px auto 40px;
         color: colours.$Bay-DarkGrey;
 }
 
@@ -22,24 +26,23 @@
 }
 
 .shopping-bag-nav {
-    display: flex;
+    display: grid;
     height: 36px;
+    width: 100%;
     align-items: center;
     margin-top:15px;
-    position: sticky;
-    top: 0;
-    gap: 110px;
+    grid-template-columns: 27% 20% 20% 15% 18%;
     background-color: colours.$Bay-LightGrey;
-    z-index: 5;
+    z-index: 1;
 }
 
 .shopping-bag-items {
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    border-bottom: 2px solid #d8d8d8;
+    flex-direction: column;
+    margin-right: 30px;
+    gap: 30px;
+    border-bottom: 1px solid #d8d8d8;
 }
 .shopping-bag__item {
         color: colours.$Bay-Black;
@@ -47,30 +50,28 @@
         font-weight: 700;
         line-height: 30px;
         padding: 0 1rem;
-        &:hover {
-            cursor: pointer;
-            border-top: 2px solid transparent;
-            border-bottom: 2px solid colours.$Bay-Blue;
-        }
     }
 .shopping-bag__item-card {
     display: flex;
+    width: 100%;
+    padding-right: 10px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    width:max-content;
+    
 }
 
 .shopping-bag__item-card-image img{
     height: 17vh;
     width: 80px;
+    object-fit: contain;
     padding-top: 10px;
 }
 
 
 .shopping-bag__item-card-title-bar {
     padding-top:10px;
+    width: 120px;
 }
 
 .shopping-bag__item-card-title{
@@ -87,12 +88,21 @@
 }
 
 .shopping-bag__item-card-delivery {
-    padding-top:45px;
     font-size:12px;
+}
+
+.bag-input {
+    display: flex;
+    align-items: center;
+}
+
+.bag-input > label {
+    line-height: 20px;
 }
 
 .shopping-bag__item-card-price-bar {
     padding:50px;
+    width: 160px;
 }
 
 .shopping-bag__item-card-price--old {
@@ -135,14 +145,16 @@ border-right: 1px solid colours.$Bay-LineGrey;
 .shopping-bag__item-card-total{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding-left:49px;
-    padding-right: 15px;
+    justify-content: center;
+    padding-left: 34px;
+    padding-right: 30px;
 }
 
 .shopping-bag__item-card-sum {
- font-weight:700;
- font-size: 20px;
+ font-weight: 700;
+ width: 70px;
+ text-align: center;
+ font-size: 18px;
 }
 
 .shopping-bag__item-card-icon {
@@ -169,7 +181,7 @@ border-right: 1px solid colours.$Bay-LineGrey;
 .shopping__summary-title {
     font-weight:700;
     padding: 0 0 25px 0;
-    border-bottom: 2px solid colours.$Bay-LineGrey;
+    border-bottom: 1px solid colours.$Bay-LineGrey;
 }
 
 .shopping__summary-order-container {
@@ -190,8 +202,11 @@ font-weight: 700;
 }
 
 .shopping__summary-order-line {
-border-bottom: 2px solid colours.$Bay-LineGrey;
+border-bottom: 1px solid colours.$Bay-LineGrey;
 padding-bottom: 10px;
+}
+.shopping__summary-num {
+    padding: 25px 0;
 }
 
 .shopping__summary-order-desc {
@@ -205,10 +220,11 @@ padding-bottom: 10px;
 
 .shopping__summary-paypal {
     padding: 22px 20px;
-    border: 2px solid colours.$Bay-LineGrey ;
+    border: 1px solid colours.$Bay-LineGrey ;
     margin-top: 20px;
     font-size: 18px;
-    background: url('../../Assets/Icons/paypal.jpg') 95px 15px no-repeat;
+    background: url('../../Assets/Icons/paypal.jpg') no-repeat;
+    background-position: center;
     cursor: pointer;
     width: 100%;
 }

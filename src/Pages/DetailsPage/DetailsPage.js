@@ -34,7 +34,7 @@ const DetailsPage = () => {
         </div>
 
         <div className="product-detail-desc">
-          <h1>Calvin Klein</h1>
+          <h1 className='bold'>Calvin Klein</h1>
           <h2>Floral Chiffon Wrap Midi Dress</h2>
           <p className="price">$179</p> <div className='sale-price'>$125.30</div>
 
@@ -60,7 +60,7 @@ const DetailsPage = () => {
             </div>
           </div>
 
-          <div class="product-gift-container">
+          <div className="product-gift-container">
             <img className="product-gift-box" src={Gift} alt='giftbox' />
             <div className="product-gift-desc">Eligible for Gift Receipt</div>
           </div>
@@ -84,7 +84,7 @@ const DetailsPage = () => {
 
             <div className='product-sale-size'>Size: 2</div>
 
-            <ul class="product-sale-size-grid">
+            <ul className="product-sale-size-grid">
               <li className='product-sale-size-box'>2</li>
               <li className='product-sale-size-box'>4</li>
               <li className='product-sale-size-box'>6</li>
@@ -116,11 +116,11 @@ const DetailsPage = () => {
           <form>
             <div>
               <input type="radio" />
-              <label for="shipto" >
+              <label htmlFor="shipto" >
                 Ship this Item
               </label></div>
             <input type="radio" />
-            <label for="shipto" >
+            <label htmlFor="shipto" >
               Pickup in Store
             </label>
           </form>
